@@ -1,63 +1,51 @@
-//fonts
-@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
-//colors
-$main-bg-color:#F2BA1B;
-$body-txt-color:#1B54E6;
-
-
-$font:'Staatliches', cursive;
+@import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
 html {
   box-sizing: border-box;
-  
 }
 
 body {
   margin: 0;
   min-height: 100vh;
-  background: $main-bg-color;
+  background: #F2BA1B;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: $font;
+  font-family: "Staatliches", cursive;
   font-size: 12px;
 }
 
-
-.title-container{
+.title-container {
   position: relative;
   top: -50px;
-  
-  h2{
-    color:$body-txt-color;
-    font-size: 3rem;
-    letter-spacing: 3px;
-    // align-self: start;
-
-  }
+}
+.title-container h2 {
+  color: #1B54E6;
+  font-size: 3rem;
+  letter-spacing: 3px;
 }
 
-.player-container{
+.player-container {
   height: 500px;
   width: 400px;
-  background-color: lighten($main-bg-color, 20%);
+  background-color: #f8d77b;
   border-radius: 20px;
-  box-shadow: 0 15px 30px 5px rgba(#000000, .3);
+  box-shadow: 0 15px 30px 5px rgba(0, 0, 0, 0.3);
 }
+
 .img-container {
   height: 300px;
   width: 300px;
   position: relative;
   top: -50px;
   left: 50px;
-  img{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    border-radius: 20px;
-  box-shadow: 0 5px 30px 5px rgba(#000000, .6);
-  }
 }
-
+.img-container img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 5px 30px 5px rgba(0, 0, 0, 0.6);
+}
 
 h2 {
   font-size: 25px;
@@ -108,17 +96,16 @@ h3 {
 
 .fas {
   font-size: 30px;
-  color: rgb(129, 129, 129);
+  color: #818181;
   margin-right: 30px;
   cursor: pointer;
-  user-select: none;
-  transition: all .3s;
-  &:hover{
-    filter: brightness(80%);
-  }
+  -webkit-user-select: none;
+          user-select: none;
+  transition: all 0.3s;
 }
-
-
+.fas:hover {
+  filter: brightness(80%);
+}
 
 .main-button {
   font-size: 40px;
@@ -128,7 +115,7 @@ h3 {
 
 /* Media Query: iPhone (Vertical) */
 @media screen and (max-width: 376px) {
-  .player-container{
+  .player-container {
     width: 95vw;
   }
 
